@@ -13,6 +13,7 @@ class HomeActivity : AppCompatActivity() {
 
         usernameDisplay = findViewById(R.id.usernameDisplay)
 
-        usernameDisplay.text = "Welcome Man of God"
+        usernameDisplay.text = intent.getStringExtra("username")
+
     }
 }

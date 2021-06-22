@@ -11,7 +11,7 @@ import android.widget.ToggleButton
 
 class MainActivity : AppCompatActivity() {
 
-   private  val validUsername = "admin"
+   private  val validUsername = "Admin"
    private   val validPassword = "admin"
     //layout variables
    private lateinit var Usernameinput :EditText
@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
     }
     }
     private fun isValidDetails(username: String, password: String): Boolean{
-      if(username == validUsername && password == validPassword)  return true
-        return false
+      return(password == validPassword)
+
     }
 }
